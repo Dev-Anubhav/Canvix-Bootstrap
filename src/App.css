@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+
+body{font-family: "DM Sans", sans-serif; background: #e8e8e8;};
+
+
+.navbar{
+    background-color: #090909 !important;
+}
+.btn{color: #0C0C0C;}
+
+
+
+
+.hero{background-color: black;
+background-image: url(./assets/hero.webp);
+background-repeat: no-repeat; 
+background-size: cover;
+
+position: relative; padding: 2rem 1rem;}
+
+.orna{position: absolute; left: 0; top: 150px;}
+
+.hero-content{margin-top: 9rem; padding: 0 2rem;}
+.hero-content h2{font-size: 3vw; color: white; font-weight: 600; margin-bottom: 1rem; font-family: "Roboto Serif", sans-serif;}
+.hero-content h2 span{color: #64CCC5;}
+.hero-content p{font-size: 1rem; color: white;}
+.hero-content button{border-radius: 25px; font-size: 1.5vw; display: flex; align-items: center; padding: 8px 20px; border: none;}
+.hero-content button i{font-size: 1.5rem; margin-right: 5px;}
+.hero-img{display: flex; align-items: center; justify-content: center; margin-top: 2rem;}
+.hero-img img{height: auto; max-width: 100%;}
+
+
+/* Services */
+.services h4{color: #64CCC5; font-weight: 600;}
+.services h2{width: 45%; font-size: 3vw; font-weight: 600; font-family: "Roboto Serif", sans-serif;}
+
+.services .cards{background: #F4F4F4; border-radius: 10px;}
+.services .cards .pens{width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; border-radius: 50%; background: black; color: white; }
+.services .cards:hover{background: #000; color: #F4F4F4;}
+.services .cards:hover .pens{background: white; color: #000;}
+.cards
+.cards .card-text p{font-size: 1rem;}
+.cards .card-text .width-change{width: 80%;}
+
+
+
+/* About-Us */
+.about-us{padding: 3rem 0; background: #000;}
+.about-us .about-content{padding: 3rem 2rem; color: white;}
+.about-content h4{color: #64CCC5; font-weight: 600;}
+.about-content h2{font-size: 3vw; font-weight: 600; font-family: "Roboto Serif", sans-serif;}
+.about-content p{font-size: .9rem; margin-bottom: 2rem;}
+.about-us .about-img img{max-width: 100%; height: auto;}
+.reviews .counts{color: #64CCC5;}
+.reviews .txt{font-size: .9rem;}
+
+.about-us button{border-radius: 25px; font-size: 1.5vw; display: flex; align-items: center; padding: 8px 20px; border: none;}
+.about-us button i{font-size: 1.5rem; margin-right: 9px;}
+
+
+
+/* Projects */
+.projects{padding: 2rem 0 6rem 0;}
+.pro-content .pro-img{height: 300px; width: 100%; overflow: hidden; border-radius: 10px; position: relative;}
+.pro-content .pro-img img{max-width: 100%; height: auto; object-fit: cover;}
+.pro-img .details{height: 100%; width: 100%; position: absolute; top: 50%; right: 50%; transform: translate(50%,-50%); transition: opacity 0.4s ease; background: rgba(0, 0, 0, 0.411); display: flex; align-items: center; justify-content: center; opacity: 0;}
+.pro-img:hover .details{opacity: 1;}
+.pro-img .details i{font-size: 2rem; color: white; cursor: pointer;}
+.projects .showcase h2{font-size: 3vw; font-weight: 600; font-family: "Roboto Serif", sans-serif;}
+
+
+
+/* SinglePRo */
+.singlepro{padding: 5rem 0;}
+.single-img{position: relative;}
+.single-img img{width: 100%; height: 500px;}
+.card-details{position: absolute; left: 0; right: 0; bottom: -50px;}
+.blackbox{box-shadow: 0 0 2px;}
+.blackbox span{font-size: .9rem; color: rgb(153, 153, 153);}
+.single-about{margin-top: 4rem;}
+
+
+
+/* Footer */
+.footer{background: #000;}
+.footer .brand-logo p{font-size: 1vw;}
+.footer .input button{
+    background-color: #0C0C0C;
+}
+.footer .input input{outline: none;}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:460px){
+    .hero-content{margin-top: 2.5rem;}
+    .hero-content button{font-size: 3vw;}
+    .about-us button{font-size: 3vw;}
+    .card-details{position: absolute; bottom: -50px; display: none;}
+    .single-img img{width: 100%; height: auto;}
+    .footer .brand-logo p{font-size: 4vw;}
+
+}
